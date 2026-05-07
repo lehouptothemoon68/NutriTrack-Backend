@@ -1,4 +1,4 @@
-package htw.webtech.Pinguin;
+package htw.webtech.NutriTrack;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

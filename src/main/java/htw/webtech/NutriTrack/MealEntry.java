@@ -1,4 +1,4 @@
-package htw.webtech.Pinguin;
+package htw.webtech.NutriTrack;
 
 public class MealEntry {
     private String name;
