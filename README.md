@@ -1,7 +1,38 @@
-# NutriTrack
-## Projektbeschreibung
-Im Rahmen des Moduls Webtechnologie entwickeln wir NutriTrack, eine browserbasierte Webanwendung zur Erfassung und Auswertung der täglichen Kalorienzufuhr. Nutzer können Mahlzeiten und Lebensmittel suchen, ihren Gerichten zuordnen und erhalten eine automatische Berechnung der aufgenommenen Kalorien sowie der Makronährstoffe Kohlenhydrate, Proteine und Fette. Häufig konsumierte Gerichte lassen sich als Favoriten speichern, um die tägliche Erfassung zu beschleunigen.
+# NutriTrack Backend
 
+REST API für die NutriTrack Webanwendung zur Kalorienverfolgung.
 
-Le Ho Gia Kinh Matrikelnummer: 598090
-Michael Kecker Matrikelnummer: 600971
+## Tech-Stack
+
+- **Framework:** Spring Boot
+- **Sprache:** Java 21
+- **Datenbank:** PostgreSQL
+- **Deployment:** Render.com
+- **CI/CD:** GitHub Actions
+
+## API Endpunkte
+
+| Method | URL | Beschreibung |
+|---|---|---|
+| GET | /meals | Alle Mahlzeiten laden |
+| POST | /meals | Neue Mahlzeit erstellen |
+| PUT | /meals/{id} | Mahlzeit bearbeiten |
+| DELETE | /meals/{id} | Mahlzeit löschen |
+
+## Backend starten (lokal)
+
+```bash
+./gradlew bootRun
+```
+
+Backend läuft auf: http://localhost:8080
+
+## Tests ausführen
+
+```bash
+./gradlew test
+```
+
+## Live Backend
+
+https://nutritrack-backend-1.onrender.com
