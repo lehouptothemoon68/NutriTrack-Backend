@@ -1,1 +1,9 @@
-ALTER TABLE meal_entry ADD COLUMN IF NOT EXISTS favorite BOOLEAN NOT NULL DEFAULT FALSE;
+CREATE TABLE IF NOT EXISTS meal_entry (
+                                          id BIGSERIAL PRIMARY KEY,
+                                          name VARCHAR(255) NOT NULL,
+    count_carbs DOUBLE PRECISION,
+    count_fat DOUBLE PRECISION,
+    count_proteins DOUBLE PRECISION,
+    favorite BOOLEAN NOT NULL DEFAULT FALSE,
+    owner VARCHAR(255)
+    );
